@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animate Image</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .animated-image {
+            position: relative;
+            animation: moveRight 5s infinite alternate;
+        }
+
+        @keyframes moveRight {
+            0% {
+                margin-left: 0;
+            }
+            100% {
+                margin-left: 50%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="animated-image">
+        <img src="https://png.pngtree.com/png-clipart/20210530/ourmid/pngtree-cartoon-cute-smiling-girl-body-png-image_3388559.jpg" alt="Animated Girl">
+    </div>
+</body>
+</html>
